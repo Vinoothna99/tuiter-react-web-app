@@ -7,19 +7,11 @@ function App() {
       <header className="App-header">
 
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is my 1st Assignment
-        </p>
-
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hey? I am Vinoothna. Nice to meet you!
-        </a>
+        <h1>Web Dev Assignment - 2</h1>
+        <ul>
+          <li><a href="./labs/a2/index.html">Assignment 2 Labs</a></li>
+          <li><a href="./tuiter/navigation.html">Tuiter</a></li>
+        </ul>
       </header>
     </div>
   );
