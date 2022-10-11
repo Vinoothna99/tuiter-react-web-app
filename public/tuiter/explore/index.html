@@ -2,145 +2,231 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
     <link href="../style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"/>
 </head>
-<body class="wd-BodyBackground">
-<div class="wd-container">
-    <div>
-        <input type="text" class="wd-search" id="SearchBar" placeholder="      &#128269        Search  Twitter"/>
-        <a class="wd-gear" href="./explore-settings.html">&#9881;</a>
-    </div>
-    <br>
-    <div class="wd-menu">
+<body>
 
-        <div class="wd-menuHighlight">For You <div class="underline"></div></div>
-        <div class="wd-menuOption">Trending</div>
-        <div class="wd-menuOption">Covid-19</div>
-        <div class="wd-menuOption">News</div>
-        <div class="wd-menuOption">Sports</div>
-        <div class="wd-menuOption">Entertainment</div>
+<div class="container">
+    <div class="row">
 
-    </div>
-    <div class="wd-separator">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2 navigation-sidebar">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-brands fa-twitter col-xs-12"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-solid fa-house-chimney col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Home</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-solid fa-hashtag col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Explore</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-sharp fa-solid fa-bell col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Notifications</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-solid fa-envelope col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Messages</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-solid fa-bookmark col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Bookmarks</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-solid fa-list col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Lists</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-solid fa-user col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">Profile</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-solid fa-ellipsis col-xs-12 col-xl-2"></i>
+                    <span class="sm-hide">More</span>
+                </a>
 
-    </div>
-    <div class="wd-dots">&#8943</div>
-    <br>
-    <br>
-    <div class="wd-postTypeC">
-        <div>
-            <div class="wd-topic">
-                Trending in Science
             </div>
-            <div class="wd-dots">&#8943</div>
-        </div>
-        <br>
-        <div class="wd-title">Starship</div>
-        <div class="wd-tweets">55.5K Tweets</div>
-    </div>
-    <br>
-    <div class="wd-postTypeC">
-        <div>
-            <div class="wd-topic">
-                Sports &#8901 Trending
-            </div>
-            <div class="wd-dots">&#8943</div>
-        </div>
-        <br>
-        <div class="wd-title">Joe Rogan</div>
-        <div class="wd-tweets">5,218 Tweets</div>
-    </div>
-    <br>
-    <div class="wd-postTypeD">
-        <div class="wd-content">
-            <div>
-                <div class="wd-author">&#8493 The New York Times &nbsp
-
-                </div>
-
-                <img class="verified-image" src="verified-icon.png"/>
-
-                <div class="wd-topic">
-                    &nbsp &#8901 Yesterday
-                </div>
-            </div>
-            <br>
-            <div class="wd-title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</div>
+            <button class="btn btn-primary tweet">Tweet</button>
         </div>
 
-            <img class="wd-postImage" height="100px" width="100px" src="pic1.jfif"/>
-
-    </div>
-    <div class="wd-postTypeE">
-        <div class="wd-content">
-
-            <div class="wd-topic">
-                COVID-19 &#8901 Live
-            </div>
-
-            <br>
-            <div class="wd-title">It is a long established fact that a reader will be distracted by the
-                readable content of a page when looking at its layout. </div>
-        </div>
-        <img class="wd-postImage" height="100px" width="100px" src="pic2.jfif"/>
-    </div>
-    <div class="wd-postTypeD">
-        <div class="wd-content">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
             <div>
 
-                <img class="verified-image" src="b-icon.png"/>
-                <div class="wd-author">&nbsp Bloomberg Opinion &nbsp
+                <input type="text" class="wd-search" id="SearchBar"  placeholder="    Search  Twitter"/>
+                <a class="wd-gear" href="./explore-settings.html"><i class="fa fa-solid fa-gear"></i></a>
 
+            </div>
+            <i class="fa fa-solid fa-magnifying-glass search-icon"></i>
+            <br>
+
+            <ul class="nav nav-tabs">
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For you</a>
+                    </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
                 </div>
 
-                <img class="verified-image" src="verified-icon.png"/>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                </div>
 
-                <div class="wd-topic">
-                    &nbsp &#8901 Yesterday
+                <div class="entertainment">
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </div>
+
+            </ul>
+            <div>
+                <img class="spacex"   src="../../images/spacex.jfif"/>
+                <span class="postHeading">SpaceX's Starship</span>
+                <div  class="posts">
+                    <div class="post">
+                        <img class="post-image"   src="../../images/react.jfif"/>
+
+                        <div class="post-content">
+                            <div class="post-topic">
+                                Web Development
+                            </div>
+
+                            <div><span  class="post-title">ReactJS <i class="fa fa-solid fa-circle-check"></i></span><span class="post-topic"> - 2h</span> </div>
+
+                            <div class="post-title">React.js is a component based front end library that makes it very easy to build
+                                Single Page Applications or SPA's.</div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post-image"   src="../../images/javascript.png"/>
+
+                        <div class="post-content">
+
+                            <div><span  class="post-title">JavaScript <i class="fa fa-solid fa-circle-check"></i></span><span class="post-topic"> - 2h</span> </div>
+
+                            <div class="post-title">JavaScript is a programming language that can run on browsers as well as desktops.</div>
+                            <div class="post-topic">
+                                123K Tweets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post-image"   src="../../images/jquery.png"/>
+
+                        <div class="post-content">
+                            <div class="post-topic">
+                                Web Development
+                            </div>
+                            <div><span  class="post-title">JQuery</span></div>
+
+                            <div class="post-topic">
+                                123K Tweets
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="post-image"   src="../../images/nodejs.png"/>
+
+                        <div class="post-content">
+                            <div class="post-topic">
+                                Web Development
+                            </div>
+
+                            <div><span  class="post-title">NodeJs <i class="fa fa-solid fa-circle-check"></i></span><span class="post-topic"> - 2h</span> </div>
+                            <div class="post-topic">
+                                123K Tweets
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <br>
-            <div class="wd-title">
-                Lorem Ipsum is simply dummy text
-            </div>
+
         </div>
 
-        <img class="wd-postImage" height="100px" width="100px" src="pic3.jfif"/>
+        <div class=" col-lg-4 col-xl-4 col-xxl-4 nav-rightside-bar">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <span class="post-title">Who to Follow</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img class="profile-image"   src="../../images/java.jpg"/>
 
-    </div>
+                    <div class="profile-content">
+                        <div><span class="post-title">Java </span><i class="fa fa-solid fa-circle-check"></i></div>
+                        <div class="profile-handle">@Java</div>
+                    </div>
+                    <button class="btn btn-primary profile-follow">Follow</button>
 
-    <div class="wd-postTypeC">
-        <div>
-            <div class="wd-topic">
-                Trending in United States
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img class="profile-image"   src="../../images/relativityspace.jfif"/>
+
+                    <div class="profile-content">
+                        <div><span class="post-title">Relativity Space </span><i class="fa fa-solid fa-circle-check"></i></div>
+                        <div class="profile-handle">@relativityspace</div>
+                    </div>
+                    <button class="btn btn-primary profile-follow">Follow</button>
+
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img class="profile-image"   src="../../images/galactic.png"/>
+
+                    <div class="profile-content">
+                        <div><span class="post-title">Virgin Galactic </span><i class="fa fa-solid fa-circle-check"></i></div>
+                        <div class="profile-handle">@virgingalactic</div>
+                    </div>
+
+                    <button class="btn btn-primary profile-follow">Follow</button>
+
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img class="profile-image"   src="../../images/nasa.jfif"/>
+
+                    <div class="profile-content">
+                        <div><span class="post-title">Nasa </span><i class="fa fa-solid fa-circle-check"></i></div>
+                        <div class="profile-handle">@nasa</div>
+                    </div>
+                    <button class="btn btn-primary profile-follow">Follow</button>
+
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img class="profile-image"   src="../../images/tesla.png"/>
+
+                    <div class="profile-content">
+                        <div><span class="post-title">Tesla </span><i class="fa fa-solid fa-circle-check"></i></div>
+                        <div class="profile-handle">@tesla</div>
+                    </div>
+                    <button class="btn btn-primary profile-follow">Follow</button>
+                </a>
+
+
             </div>
-            <div class="wd-dots">&#8943</div>
+
         </div>
-        <br>
-        <div class="wd-title">Wonder Bread</div>
-        <div class="wd-tweets">1,259 Tweets</div>
-        <br>
+
     </div>
-
-    <div class="wd-postTypeE">
-        <div class="wd-content">
-
-            <div class="wd-topic">
-                CELEBRITY NEWS &#8901 Live
-            </div>
-
-            <br>
-            <div class="wd-title">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                written in 45 BC. This book is a treatise on the theory of ethics,
-                very popular during the Renaissance.
-            </div>
-        </div>
-        <img class="wd-postImage" height="100px" width="100px" src="pic4.jfif"/>
-    </div>
-
 </div>
+
+
 </body>
 </html>
