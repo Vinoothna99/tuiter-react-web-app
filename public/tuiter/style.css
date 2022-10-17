@@ -28,3 +28,417 @@
     font-size: 15px;
     color: lightgray;
 }
+
+@media (min-width: 30px)
+and (max-width: 992px){
+    .nav-tabs .entertainment{
+        display: none;
+    }
+
+    .nav-rightside-bar{
+        display: none;
+    }
+
+    .covid{
+        display: none;
+    }
+}
+
+@media (min-width: 30px)
+and (max-width: 1200px){
+    .sm-hide{
+        display: none;
+    }
+}
+
+@media (min-width: 992px)
+and (max-width: 1200px){
+    .tweet{
+        width: 75px !important;
+    }
+}
+
+.wd-menu{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding-left: 16px;
+    padding-right: 12px;
+
+}
+
+.wd-menuHighlight{
+    color: rgb( 29, 161, 242);
+    padding: 16px 16px 0px 16px;
+    /*border-bottom: 4px solid rgb( 29, 161, 242);*/
+
+}
+
+.underline{
+    border: 4px solid rgb( 29, 161, 242);
+    border-radius:10px 10px 10px 10px;
+    margin-top: 16px;
+}
+
+.wd-menuOption{
+    color: rgb(110, 118, 125);
+    padding: 16px;
+}
+
+.nav-tabs{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.wd-search{
+    width: 90%;
+    height: 30px;
+    font-size: 15px;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 20px;
+    padding-left: 50px;
+
+}
+
+.wd-gear{
+    position: relative;
+    top:-6px;
+    float: right;
+    text-decoration: none;
+    font-size: 28px;
+
+}
+
+.search-icon{
+    position: relative;
+    top:-28px;
+    left: 12px;
+}
+
+.tweet{
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 12px;
+    padding: 5px 0;
+}
+
+.spacex{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.posts{
+    background-color: #222222;
+    position: relative;
+    top:-60px;
+    border-radius: 5px;
+}
+
+.postHeading{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    top: -60px;
+    left: 12px;
+}
+
+.post{
+
+    padding: 10px 12px;
+    min-height: 120px;
+}
+
+.post-topic{
+    font-size: 16px;
+    color: #656565;
+
+}
+
+.post-title{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.post-image{
+    width: 90px;
+    height:90px;
+    border-radius: 20px;
+    float: right;
+}
+.post-content{
+    width: 70%;
+}
+
+.profile-image{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 5px;
+}
+
+.profile-content{
+    width: 75%;
+}
+
+.profile-follow{
+    width: 80px;
+    float: right;
+    padding: 5px 0;
+    border-radius: 20px;
+
+}
+
+.profile-handle{
+    font-size: 16px;
+
+
+}
+
+.container{
+    padding-top: 10px;
+}
+
+.nav-rightside-bar .list-group-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.ch-body{
+    background-color: black;
+}
+
+.ch-leftsidebar{
+    border: none;
+}
+
+.ch-text{
+    color: white;
+}
+
+.ch-icon{
+    color: white;
+}
+
+.ch-leftsidebar .ch{
+    border: none;
+    background-color: black;
+}
+
+.ch-rightsidebar .ch{
+    border: none;
+    background-color: #222222;
+}
+.ch-rightsidebar{
+    border-radius: 20px;
+}
+.ch-subText{
+    color: #767676;
+}
+
+.ch-follow{
+    background-color: white;
+    color: black;
+}
+
+.terms{
+    font-size: 13px;
+    color: #767676;
+}
+
+.ch-searchBar{
+    background-color: #222222;
+    color: #767676;
+    margin-left: 12px;
+}
+
+.ch-gear{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: -3px;
+    margin-right: 12px;
+}
+
+.middle-column{
+    border: 1px solid #767676;
+    padding: 10px 0;
+    max-height: 850px;
+}
+
+.ch-margin{
+    margin-top: 10px;
+}
+
+.coldplay{
+    width: 100%;
+    height: 400px;
+    border-top: 1px solid #767676;
+    border-bottom: 1px solid #767676;
+}
+
+.ch-postHeading{
+
+    position: relative;
+    top: -120px;
+    left: 12px;
+}
+
+.ch-small{
+    color: white;
+    font-size: 14px;
+
+}
+
+.ch-big{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.ch-posts{
+    position: relative;
+    top:-120px;
+}
+
+.ch-post{
+    padding: 12px;
+}
+
+.ch-postText{
+    color: white;
+    font-weight: 700;
+}
+
+.ch-postSubText{
+    color: #767676;
+    font-size: 14px;
+}
+
+.wd-BodyBackground{
+    background-color: black;
+    width: 650px;
+}
+.wd-BookmarksTitle{
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-BigTitle{
+    font-size: 20px;
+    color: white;
+}
+
+.wd-Caption{
+    font-size: 13px;
+    color: lightgray;
+}
+
+.wd-BookmarkedPost{
+    border-top: 1px solid lightgray;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-dots{
+    float: right;
+    color: rgb( 29, 161, 242);
+    font-size: 30px;
+    padding-right: 22px;
+}
+
+
+.wd-ProfileImage{
+    border-radius: 50%;
+    float: left;
+    margin-right: 12px;
+}
+
+.wd-BookmarkContent{
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    float: right;
+}
+
+.wd-AuthorHandle{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-SmallDots{
+    float: right;
+    font-size: 20px;
+    color: rgb(110, 118, 125);
+    margin-right: 12px;
+
+}
+
+.wd-fixHeight{
+
+
+}
+
+.wd-PostImage{
+    margin-left: 60px;
+    width: 80%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid darkgrey ;
+
+
+}
+
+.wd-ImageContent{
+    border-top: 0;
+    margin-left: 60px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid darkgrey ;
+    width: 80%;
+    padding: 12px;
+
+}
+
+.wd-ActionItems{
+    margin-left: 60px;
+    margin-top: 12px;
+    width: 80%;
+    display: flex;
+    margin-bottom: 12px;
+}
+.wd-actionLink{
+    text-decoration: none;
+    width: 25%;
+}
+
+.wd-actionNumber{
+    margin-left: 12px;
+}
+.wd-userDetails{
+
+}
+
+.wd-BookmarkContent{
+
+    width: 80%;
+}
+
