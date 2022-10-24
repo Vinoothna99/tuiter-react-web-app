@@ -1,3 +1,4 @@
+
 const NavigationSidebar = (active) => {
     return(`
   <div class="list-group">
