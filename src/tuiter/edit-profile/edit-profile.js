@@ -1,8 +1,5 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import {Button} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import ProfileIndex from "../profile";
 import EditProfileIndex from "./index";
 
 const EditProfileComponent = () => {
