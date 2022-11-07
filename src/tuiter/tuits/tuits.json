@@ -1,0 +1,43 @@
+[{
+  "id": 234,
+  "topic": "Space",
+  "userName": "SpaceX",
+  "time": "2h",
+  "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+  "image": "spacex.jfif",
+  "liked": true,
+  "replies": 123,
+  "retuits": 432,
+  "likes": 2345,
+  "handle": "@spacex",
+  "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+ },
+
+  { "id": 294,
+    "topic": "Tesla",
+    "userName": "TeslaStar",
+    "time": "6h",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "image": "saturn.png",
+    "liked": false,
+    "replies": 1234,
+    "retuits": 900,
+    "likes": 567,
+    "handle": "@tesla",
+    "tuit": "Motivational message brings confidence and hope in one’s life and it motivates people to let go the negative things and welcome the positive vibe in their love. Send motivational messages to your near and dear ones to encourage them to go forward in the life. Sometimes we face some depressing moments and we lose hope to overcome it, but a motivational message from your friends and family makes you able to believe in yourself and win over all your shortcomings. The inspirational message from your friends, boss, teachers and others belonging motivates you, even in the worst situation and it lit up a light of hope."
+  },
+  { "id": 274,
+    "topic": "Hardwork",
+    "userName": "Vin99",
+    "time": "1h",
+    "title": "It’s hard to push through the tough times; read these hard work quotes to boost your confidence.",
+    "image": "img1.jfif",
+    "liked": true,
+    "replies": 876,
+    "retuits": 345,
+    "likes": 886,
+    "handle": "@vinoothna",
+    "tuit": "The last thing you want to do is work as you start your day. But don’t give in! Instead, keep pushing forward and working hard because when it’s all said and done, some great benefits come with it, like increased happiness, productivity, creativity, etc."
+  }
+]
+

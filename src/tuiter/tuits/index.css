@@ -536,3 +536,12 @@ and (max-width: 1200px){
     border: 1px solid #656565;
 
 }
+
+
+.redColor{
+    color: tomato;
+}
+
+.blackColor{
+    color: black;
+}

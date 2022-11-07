@@ -8,7 +8,8 @@ const HomeComponent = () => {
             {
                 postsArray.map(post =>
                                    <PostListItem
-                                       key={post.id} post={post}/> )
+                                       key={post.id} post={post}/>
+                                    )
             }
         </div>
     );

@@ -410,9 +410,6 @@ and (max-width: 1200px){
 .wd-ImageContent{
     border-top: 0;
     margin-left: 60px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border: 1px solid darkgrey ;
     width: 80%;
     padding: 12px;
 
