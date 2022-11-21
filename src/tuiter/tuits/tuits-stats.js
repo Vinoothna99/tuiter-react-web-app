@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
 import {useDispatch} from "react-redux";
-import {likedTuitToggle} from "../tuits/tuits-reducer";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 const TuitStats = (
     {
@@ -14,9 +13,7 @@ const TuitStats = (
     }
 ) => {
     const dispatch = useDispatch();
-    const likeButtonPressed = (tuit) => {
-        dispatch(likedTuitToggle(tuit))
-    }
+
 
     return(
         <>

@@ -48,15 +48,14 @@ const EditProfileComponent = () => {
             followersCount: 223
         };
         setProfile(newProfile);
-        console.log("dispatch",newProfile)
+
         dispatch(updateProfileData(newProfile));
         dispatch(deleteProfile(index));
 
     }
     const userNameChangeHandler = (event) => {
-        const value = event.target.value;
         setUserName(event.target.value);
-        console.log("goooo: ", userName);
+
     }
 
     const bioChangeHandler = (event) => {
