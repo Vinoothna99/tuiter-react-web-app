@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import {useDispatch} from "react-redux";
 import {likedTuitToggle} from "../tuits/tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 const TuitStats = (
     {
         post = {
@@ -29,10 +30,14 @@ const TuitStats = (
                         <i className="bi bi-repeat"></i>
                         <span className="wd-actionNumber">{post.retuits}</span>
                     </a>
+
                     <a className="wd-actionLink cycle" >
                         <i className={post.liked?"bi bi-heart-fill redColor":"bi bi-suit-heart blackColor"}
-                        onClick={() =>
-                            likeButtonPressed(post)
+                        onClick={
+                            () => dispatch(updateTuitThunk({
+                                                                    ...post,
+                                                                    likes: post.likes + 1
+                                                                }))
                         }></i>
                         <span className="wd-actionNumber">{post.likes}</span>
                     </a>

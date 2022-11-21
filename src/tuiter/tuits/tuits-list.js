@@ -1,22 +1,36 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useSelector, useDispatch} from "react-redux";
 import TuitItem from "./tuit-item";
 import TuitStats from "./tuits-stats";
+import {findTuitsThunk}
+    from "../../services/tuits-thunks";
+
 
 const TuitsList = () => {
-    const postsArray = useSelector(state => state.tuits)
+    const tuits = useSelector(state => state.tuits);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+
+
+    }, [])
+
     return(
         <div className="wd-BookmarkedPost">
         <ul className="list-group">
             {
-                postsArray.map(post =>
+                tuits.loading &&
 
-                        <li key={post.id} className="list-group-item">
-                            <TuitItem post={post}/>
-                            <TuitStats post={post}/>
-                        </li>
-                    )
+                tuits.tuits.map(post =>
+
+                <li key={post.id} className="list-group-item">
+                <TuitItem post={post}/>
+                <TuitStats post={post}/>
+                </li>
+                )
             }
+
+
         </ul>
         </div>
     );

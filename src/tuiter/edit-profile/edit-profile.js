@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import {Button} from "react-bootstrap";
 import {useDispatch,useSelector} from "react-redux";
@@ -6,68 +6,80 @@ import {deleteProfile, updateProfileData} from "../profile/profile-reducer";
 const EditProfileComponent = () => {
     const profileArray = useSelector(
         (state) => state.profile);
+
+    const [index, setIndex]=useState(0);
     const [profile, setProfile] = useState({userName: '',
                                                        website: '',
                                                        location: '',
                                                        bio: '',
                                                        dateOfBirth: ''});
+    const [userName, setUserName]=useState("");
+    const [location, setLocation]=useState("");
+    const [bio, setBio]=useState("");
+    const [dateOfBirth, setDateOfBirth]=useState("");
+    const [website, setWebsite]=useState("");
+
+    useEffect(() => {
+        profileArray.map((profile, index) => {
+            setProfile(profile);
+            setIndex(index);
+            setWebsite(profile.website);
+            setBio(profile.bio);
+            setDateOfBirth(profile.dateOfBirth);
+            setUserName(profile.userName);
+            setLocation(profile.location);
+        });
+
+    });
+
     const dispatch = useDispatch();
-    const updateProfile = (profile, index) => {
-        dispatch(updateProfileData(profile));
+    const updateProfile = () => {
+        const newProfile = {
+            location: location,
+            userName:userName,
+            bio:bio,
+            website:website,
+            dateOfBirth:dateOfBirth,
+            id:(new Date()).getTime(),
+            profilePicture: "coldplay.jfif",
+            bannerPicture: "spacex.jfif",
+            dateJoined: "9/2022",
+            followingCount: 340,
+            followersCount: 223
+        };
+        setProfile(newProfile);
+        console.log("dispatch",newProfile)
+        dispatch(updateProfileData(newProfile));
         dispatch(deleteProfile(index));
 
     }
     const userNameChangeHandler = (event) => {
         const value = event.target.value;
-        const newUserName = {
-            ...profile,
-            userName: value
-        };
-        setProfile(newUserName);
+        setUserName(event.target.value);
+        console.log("goooo: ", userName);
     }
 
     const bioChangeHandler = (event) => {
         const value = event.target.value;
-        const newBio = {
-            ...profile,
-            bio: value
-        };
-        setProfile(newBio);
+        setBio(value);
     }
 
     const locationChangeHandler = (event) => {
         const value = event.target.value;
-        const newLocation = {
-            ...profile,
-            location: value
-        };
-        setProfile(newLocation);
+        setLocation(value);
     }
 
     const websiteChangeHandler = (event) => {
         const value = event.target.value;
-        const newWebsite= {
-            ...profile,
-            website: value
-        };
-        setProfile(newWebsite);
+        setWebsite(value);
     }
 
     const dateOfBirthChangeHandler = (event) => {
         const value = event.target.value;
-        const newDOB = {
-            ...profile,
-            dateOfBirth: value
-        };
-        setProfile(newDOB);
+        setDateOfBirth(value);
     }
 
     return(
-        <div>
-
-
-            {
-                profileArray.map((profile, index) =>
                                     <>
                                         <div>
                                             <Link to="/tuiter/profile" style={{float:"left"}}>
@@ -77,14 +89,14 @@ const EditProfileComponent = () => {
 
                                         </div>
 
-                                        <div>{profile.userName}</div>
+                                        <div>{userName}</div>
                                         <div>67,819 Tweets</div>
                                         <img src={`/images/${profile.bannerPicture}`} style={{width: '100%', height:'300px'}}/>
                                         <br/>
                                         <br/>
 
                                         <label htmlFor="name">Name:</label>
-                                        <div><input id="name" type="text" value={profile.userName}
+                                        <div><input id="name" type="text" defaultValue={userName}
                                                     onChange={userNameChangeHandler}/></div>
 
 
@@ -93,7 +105,7 @@ const EditProfileComponent = () => {
                                         <br/>
                                         <div>
                                             <label htmlFor="website">Website:</label>
-                                            <div><input id="website" type="text" value={profile.website}
+                                            <div><input id="website" type="text" defaultValue={website}
                                                         onChange={websiteChangeHandler}/></div>
 
                                         </div>
@@ -102,7 +114,7 @@ const EditProfileComponent = () => {
                                         <hr/>
                                         <br/>
                                         <label htmlFor="bio">Bio:</label>
-                                        <div><input id="bio" type="text" value={profile.bio}
+                                        <div><input id="bio" type="text" defaultValue={bio}
                                                     onChange={bioChangeHandler}/></div>
 
                                         <br/>
@@ -111,7 +123,7 @@ const EditProfileComponent = () => {
                                         <div>
                                             <i className="bi bi-geo-alt"></i>
                                             <label htmlFor="location">Location:</label>
-                                            <div><input id="location" type="text" value={profile.location}
+                                            <div><input id="location" type="text" defaultValue={location}
                                                         onChange={locationChangeHandler}/></div>
 
                                             <br/>
@@ -119,7 +131,7 @@ const EditProfileComponent = () => {
                                             <br/>
                                             <i className="bi bi-balloon"></i>
                                             <label htmlFor="dateOfBirth">Date of Birth:</label>
-                                            <div><input id="dateOfBirth" type="date" value={profile.dateOfBirth}
+                                            <div><input id="dateOfBirth" type="date" defaultValue={dateOfBirth}
                                                         onChange={dateOfBirthChangeHandler}/></div>
 
                                             <br/>
@@ -130,12 +142,11 @@ const EditProfileComponent = () => {
                                         <Link to="/tuiter/profile" style={{float:"left"}} >
                                             <Button className="btn btn-info"
                                                     onClick={() =>
-                                                        updateProfile(profile,index)}>Save</Button>
+                                                        updateProfile()}>Save</Button>
                                         </Link>
 
                                     </>
-                )
-            }
-        </div>)
+
+        )
 };
 export default EditProfileComponent;

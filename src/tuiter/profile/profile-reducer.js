@@ -7,10 +7,9 @@ const profileSlice = createSlice({
                                      reducers: {
 
                                          updateProfileData(state, action) {
+                                             console.log(" Reducer addProfile", action.payload );
                                              state.push({
                                                             id: (new Date()).getTime(),
-                                                            do: action.payload.do,
-                                                            done: false,
                                                             userName:action.payload.userName,
                                                             handle: action.payload.handle,
                                                             profilePicture: "coldplay.jfif",
@@ -26,6 +25,7 @@ const profileSlice = createSlice({
 
                                          },
                                          deleteProfile(state, action) {
+                                             console.log(" Reducer deleteProfile", action.payload);
                                              const index = action.payload
                                              state.splice(index, 1)
                                          }
