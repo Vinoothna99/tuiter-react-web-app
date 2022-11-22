@@ -29,7 +29,7 @@ function Tuiter() {
             <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                  style={{"position": "relative"}}>
                 <Routes>
-                    <Route index   element={<ReduxHome/>}/>
+                    <Route path="/" element={<ReduxHome/>}/>
                     <Route path="/home" element={<ReduxHome/>}/>
                     <Route path="/explores" element={<ExploreComponent/>}/>
                     <Route path="/profile" element={<ProfileComponent/>}/>
