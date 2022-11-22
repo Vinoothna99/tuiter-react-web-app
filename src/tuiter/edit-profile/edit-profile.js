@@ -81,7 +81,7 @@ const EditProfileComponent = () => {
     return(
                                     <>
                                         <div>
-                                            <Link to="/tuiter/profile" style={{float:"left"}}>
+                                            <Link to="/tuiters/profile" style={{float:"left"}}>
                                                 <i className="bi bi-x-lg"></i>
                                             </Link>
                                             <h4 style={{alignSelf:"center"}}>&nbsp;Edit Profile</h4>
@@ -138,7 +138,7 @@ const EditProfileComponent = () => {
                                             <br/>
 
                                         </div>
-                                        <Link to="/tuiter/profile" style={{float:"left"}} >
+                                        <Link to="/tuiters/profile" style={{float:"left"}} >
                                             <Button className="btn btn-info"
                                                     onClick={() =>
                                                         updateProfile()}>Save</Button>

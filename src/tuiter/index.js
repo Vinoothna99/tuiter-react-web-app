@@ -30,10 +30,10 @@ function Tuiter() {
                  style={{"position": "relative"}}>
                 <Routes>
                     <Route index   element={<ReduxHome/>}/>
-                    <Route path="home" element={<ReduxHome/>}/>
-                    <Route path="explores" element={<ExploreComponent/>}/>
-                    <Route path="profile" element={<ProfileComponent/>}/>
-                    <Route path="edit-profile" element={<EditProfileComponent/>}/>
+                    <Route path="/home" element={<ReduxHome/>}/>
+                    <Route path="/explores" element={<ExploreComponent/>}/>
+                    <Route path="/profile" element={<ProfileComponent/>}/>
+                    <Route path="/edit-profile" element={<EditProfileComponent/>}/>
                 </Routes>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

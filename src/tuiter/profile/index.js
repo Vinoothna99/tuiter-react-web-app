@@ -26,7 +26,7 @@ const ProfileIndex = (
             <br/>
             <br/>
             <p>{profile.userName}
-                <Link to="/tuiter/edit-profile" >
+                <Link to="/tuiters/edit-profile" >
                     <Button className="btn btn-info" style={{float:'right'}}>Edit Profile</Button>
 
                 </Link>

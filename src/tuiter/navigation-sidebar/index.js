@@ -23,7 +23,7 @@ const NavigationSidebar = () => {
                     </Container>
 
                 </Link>
-                <Link to="/tuiter/home"
+                <Link to="/tuiters/home"
                    className={`list-group-item list-group-item-action ${active==='home' ? 'active' : ''}`} >
                     <Container>
                         <Row>
@@ -34,7 +34,7 @@ const NavigationSidebar = () => {
 
 
                 </Link>
-                <Link to="/tuiter/explores"
+                <Link to="/tuiters/explores"
                    className={`list-group-item list-group-item-action ${active==='explores' ? 'active' : ''}`}>
                     <Container>
                         <Row>
@@ -89,7 +89,7 @@ const NavigationSidebar = () => {
 
 
                 </a>
-                <Link to="/tuiter/profile"
+                <Link to="/tuiters/profile"
                    className={`list-group-item list-group-item-action ${active==='profile' ? 'active' : ''}`}>
                     <Container>
                         <Row>
