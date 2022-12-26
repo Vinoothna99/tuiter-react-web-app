@@ -1,0 +1,105 @@
+.wd-BodyBackground{
+    background-color: black;
+    width: 650px;
+}
+.wd-BookmarksTitle{
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-BigTitle{
+    font-size: 20px;
+    color: white;
+}
+
+.wd-Caption{
+    font-size: 13px;
+    color: lightgray;
+}
+
+.wd-BookmarkedPost{
+    border-top: 1px solid lightgray;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-dots{
+    float: right;
+    color: rgb( 29, 161, 242);
+    font-size: 30px;
+    padding-right: 22px;
+}
+
+
+.wd-ProfileImage{
+    border-radius: 50%;
+    float: left;
+    margin-right: 12px;
+}
+
+.wd-BookmarkContent{
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    float: right;
+}
+
+.wd-AuthorHandle{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-SmallDots{
+    float: right;
+    font-size: 20px;
+    color: rgb(110, 118, 125);
+    margin-right: 12px;
+
+}
+
+.wd-fixHeight{
+
+
+}
+
+.wd-PostImage{
+    margin-left: 60px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid lightgray ;
+
+
+}
+
+.wd-ImageContent{
+    position: relative;
+    top:-5px;
+    margin-left: 60px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid lightgray ;
+    width: 480px;
+    padding: 12px;
+}
+
+.wd-ActionItems{
+    margin-top: 12px;
+    width: 504px;
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 12px;
+}
+.wd-actionLink{
+    text-decoration: none;
+    width: 25%;
+}
+
+.wd-actionNumber{
+    margin-left: 12px;
+}
+
